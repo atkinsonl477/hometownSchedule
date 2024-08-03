@@ -4,7 +4,7 @@ import PyPDF2 as reader
 
 
 def takeFile():
-    pdf = open(filedialog.askopenfilename(filetypes=[("pdf (*.pdf)", "*.pdf "), ("cumdog", "*.exe")]), 'rb')
+    pdf = open(filedialog.askopenfilename(filetypes=[("pdf (*.pdf)", "*.pdf "), ("*.exe")]), 'rb')
     pdfreader = reader.PdfReader(pdf)
     sched = ''
     numOfPages = len(pdfreader.pages)
